@@ -27,9 +27,9 @@ This project demonstrates how to integrate multiple public APIs into a single Re
 ## 🏗️ Project Structure
 
 src/
-    assets/ # Static files
-    images/ # All project images
-    fonts/ # Custom fonts
+├── assets/ # Static files
+│ ├── images/ # All project images
+│ └── fonts/ # Custom fonts
 │
 ├── components/ # Reusable UI components
 │ ├── Button/ # Example component
