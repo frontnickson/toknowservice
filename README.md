@@ -1,69 +1,65 @@
-# React + TypeScript + Vite
+So, this is my best project. In this i going show, how i make project.
+Which library i set in my project. I show step by step
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My main idea is to take a lof of API and make service project when 
+user can user each API in your goals.
 
-Currently, two official plugins are available:
+I’ll make project on React/TypeScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#Which library i use:
 
-## Expanding the ESLint configuration
+Redux/toolkit persist
+axios
+react-router-dom
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+#Which API i use:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+OpenWeatherMap
+IP Geolocation API
+TheCatAPI / Dog API
+JokeAPI / Anecdotica
+PokeAPI / SWAPI 
+NASA API
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+#Basic structure project
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+src/
+├── assets/               # Статические файлы (изображения, шрифты и т.д.)
+│   ├── images/
+│   └── fonts/
+│
+├── components/           # Переиспользуемые UI-компоненты
+│   ├── Button/
+│   │   ├── Button.tsx    # Компонент
+│   │   ├── Button.module.css # Стили (CSS Modules)
+│   │   └── index.ts      # Экспорт компонента
+│   └── ... 
+│
+├── pages/                # Страницы приложения
+│   ├── Home/
+│   │   ├── Home.tsx
+│   │   └── Home.module.css
+│   ├── About/
+│   │   └── ...
+│   └── ...
+│
+├── hooks/                # Кастомные хуки
+│   ├── useFetch.ts
+│   └── ...
+│
+├── utils/                # Вспомогательные функции
+│   ├── api.ts            # API-клиент (axios/fetch)
+│   └── helpers.ts
+│
+├── types/                # Глобальные типы TypeScript
+│   ├── user.d.ts         # Интерфейсы для данных
+│   └── ...
+│
+├── store/                # (Опционально) State-менеджмент (Redux/Zustand)
+│   ├── slices/
+│   └── store.ts
+│
+├── App.tsx               # Главный компонент приложения
+├── main.tsx              # Точка входа (рендер React)
+├── index.css             # Глобальные стили
+└── vite-env.d.ts         # Типы для Vite (если используется) 
