@@ -24,18 +24,18 @@ NASA API
 #Basic structure project
 
 src/
-├── assets/               # Статические файлы (изображения, шрифты и т.д.)
+├── assets/
 │   ├── images/
 │   └── fonts/
 │
-├── components/           # Переиспользуемые UI-компоненты
+├── components/
 │   ├── Button/
-│   │   ├── Button.tsx    # Компонент
-│   │   ├── Button.module.css # Стили (CSS Modules)
-│   │   └── index.ts      # Экспорт компонента
+│   │   ├── Button.tsx
+│   │   ├── Button.module.css
+│   │   └── index.ts
 │   └── ... 
 │
-├── pages/                # Страницы приложения
+├── pages/
 │   ├── Home/
 │   │   ├── Home.tsx
 │   │   └── Home.module.css
@@ -43,23 +43,23 @@ src/
 │   │   └── ...
 │   └── ...
 │
-├── hooks/                # Кастомные хуки
+├── hooks/
 │   ├── useFetch.ts
 │   └── ...
 │
-├── utils/                # Вспомогательные функции
-│   ├── api.ts            # API-клиент (axios/fetch)
+├── utils/
+│   ├── api.ts
 │   └── helpers.ts
 │
-├── types/                # Глобальные типы TypeScript
-│   ├── user.d.ts         # Интерфейсы для данных
+├── types/
+│   ├── user.d.ts
 │   └── ...
 │
-├── store/                # (Опционально) State-менеджмент (Redux/Zustand)
+├── store/
 │   ├── slices/
 │   └── store.ts
 │
-├── App.tsx               # Главный компонент приложения
-├── main.tsx              # Точка входа (рендер React)
-├── index.css             # Глобальные стили
-└── vite-env.d.ts         # Типы для Vite (если используется) 
+├── App.tsx
+├── main.tsx
+├── index.css
+└── vite-env.d.ts
