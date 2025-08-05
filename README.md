@@ -11,18 +11,11 @@ This project demonstrates how to integrate multiple public APIs into a single Re
 
 ## 🌐 Integrated APIs
 
-- **Weather**: [OpenWeatherMap](https://openweathermap.org/api)
-- **Geolocation**: [IP Geolocation API](https://ipgeolocation.io/)
-- **Animals**: 
-  - [TheCatAPI](https://thecatapi.com/) 
-  - [Dog API](https://dog.ceo/dog-api/)
-- **Entertainment**:
-  - [JokeAPI](https://sv443.net/jokeapi/v2/)
-  - [Anecdotica](https://anecdotica.ru/api)
-- **Games & Media**:
-  - [PokeAPI](https://pokeapi.co/)
-  - [SWAPI (Star Wars)](https://swapi.dev/)
-- **Space**: [NASA API](https://api.nasa.gov/)
+-OpenWeather API
+-Weatherstack
+-NewsAPI
+-Open Library API
+-NASA API
 
 ## 🏗️ Project Structure
 

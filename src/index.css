@@ -5,10 +5,11 @@
 }
 
 :root {
-  --background-dark: #343242;
+  --background-dark: #121212;
 }
 
 body {
+  background-color: rgb(223, 224, 225);
   max-width: 1600px;
   margin: 0 auto;
 }
