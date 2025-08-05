@@ -1,65 +1,68 @@
-So, this is my best project. In this i going show, how i make project.
-Which library i set in my project. I show step by step
+# API Hub - Multi-Service Project
 
-My main idea is to take a lof of API and make service project when 
-user can user each API in your goals.
+This project demonstrates how to integrate multiple public APIs into a single React/TypeScript application. Users can access various API services for different purposes.
 
-I’ll make project on React/TypeScript
+## 🛠️ Technologies & Libraries Used
 
-#Which library i use:
+- **Framework**: React with TypeScript
+- **State Management**: Redux Toolkit + Redux Persist
+- **HTTP Client**: Axios
+- **Routing**: React Router DOM
 
-Redux/toolkit persist
-axios
-react-router-dom
+## 🌐 Integrated APIs
 
-#Which API i use:
+- **Weather**: [OpenWeatherMap](https://openweathermap.org/api)
+- **Geolocation**: [IP Geolocation API](https://ipgeolocation.io/)
+- **Animals**: 
+  - [TheCatAPI](https://thecatapi.com/) 
+  - [Dog API](https://dog.ceo/dog-api/)
+- **Entertainment**:
+  - [JokeAPI](https://sv443.net/jokeapi/v2/)
+  - [Anecdotica](https://anecdotica.ru/api)
+- **Games & Media**:
+  - [PokeAPI](https://pokeapi.co/)
+  - [SWAPI (Star Wars)](https://swapi.dev/)
+- **Space**: [NASA API](https://api.nasa.gov/)
 
-OpenWeatherMap
-IP Geolocation API
-TheCatAPI / Dog API
-JokeAPI / Anecdotica
-PokeAPI / SWAPI 
-NASA API
-
-#Basic structure project
+## 🏗️ Project Structure
 
 src/
-├── assets/
-│   ├── images/
-│   └── fonts/
+├── assets/ # Static files
+│ ├── images/ # All project images
+│ └── fonts/ # Custom fonts
 │
-├── components/
-│   ├── Button/
-│   │   ├── Button.tsx
-│   │   ├── Button.module.css
-│   │   └── index.ts
-│   └── ... 
+├── components/ # Reusable UI components
+│ ├── Button/ # Example component
+│ │ ├── Button.tsx # Component logic
+│ │ ├── Button.module.css # Component styles
+│ │ └── index.ts # Component export
+│ └── ... # Other components
 │
-├── pages/
-│   ├── Home/
-│   │   ├── Home.tsx
-│   │   └── Home.module.css
-│   ├── About/
-│   │   └── ...
-│   └── ...
+├── pages/ # Application views
+│ ├── Home/ # Main page
+│ │ ├── Home.tsx # Page component
+│ │ └── Home.module.css # Page styles
+│ ├── About/ # About page
+│ │ └── ... # Other pages
+│ └── ...
 │
-├── hooks/
-│   ├── useFetch.ts
-│   └── ...
+├── hooks/ # Custom React hooks
+│ ├── useFetch.ts # Data fetching hook
+│ └── ... # Other hooks
 │
-├── utils/
-│   ├── api.ts
-│   └── helpers.ts
+├── utils/ # Utility functions
+│ ├── api.ts # API client config
+│ └── helpers.ts # Helper functions
 │
-├── types/
-│   ├── user.d.ts
-│   └── ...
+├── types/ # TypeScript types
+│ ├── user.d.ts # User type definitions
+│ └── ... # Other type definitions
 │
-├── store/
-│   ├── slices/
-│   └── store.ts
+├── store/ # Redux store
+│ ├── slices/ # Redux slices
+│ └── store.ts # Store configuration
 │
-├── App.tsx
-├── main.tsx
-├── index.css
-└── vite-env.d.ts
+├── App.tsx # Root component
+├── main.tsx # Application entry point
+├── index.css # Global styles
+└── vite-env.d.ts # Vite type declarations
